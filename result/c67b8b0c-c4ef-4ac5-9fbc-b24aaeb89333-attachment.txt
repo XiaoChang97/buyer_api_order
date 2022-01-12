@@ -1,0 +1,15 @@
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_selOrderQueue
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_selOrderQueue
+INFO     test_case_temple.test_temple:test_temple.py:17 ************测试用例开始执行测试接口****************
+INFO     test_case_temple.test_temple:test_temple.py:18 用例yaml文件路径：D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml，用例名称：test_selOrderQueue************
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_selOrderQueue
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_selOrderQueue
+INFO     py_page.base_api:base_api.py:202 depend::[{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}, {'api': ['.\\yaml_test_api\\order.yaml', 'test_true_OrderQueue'], 'keys': ['queueNumber']}]
+INFO     py_page.base_api:base_api.py:205 d_api::{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:205 d_api::{'api': ['.\\yaml_test_api\\order.yaml', 'test_true_OrderQueue'], 'keys': ['queueNumber']}
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+INFO     py_page.base_api:base_api.py:202 depend::[{'api': ['.\\yaml_test_api\\buyer_login.yaml'], 'keys': ['sessionid']}]
+INFO     py_page.base_api:base_api.py:205 d_api::{'api': ['.\\yaml_test_api\\buyer_login.yaml'], 'keys': ['sessionid']}

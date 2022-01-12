@@ -1,0 +1,81 @@
+[ {
+  "uid" : "507f79964663c431",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_balancePay]",
+  "time" : {
+    "start" : 1641872858498,
+    "stop" : 1641872858645,
+    "duration" : 147
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2aae00a04bbae99e",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_true_OrderQueue]",
+  "time" : {
+    "start" : 1641872858021,
+    "stop" : 1641872858063,
+    "duration" : 42
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "32cb0d84449e74b6",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml-test_login]",
+  "time" : {
+    "start" : 1641872857342,
+    "stop" : 1641872857485,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ddd768035c7b2f24",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_selOrderQueue_loding]",
+  "time" : {
+    "start" : 1641872858125,
+    "stop" : 1641872858204,
+    "duration" : 79
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "529aab85ec3da39a",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml-test_getUser]",
+  "time" : {
+    "start" : 1641872857639,
+    "stop" : 1641872858005,
+    "duration" : 366
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "477fc50d23acd2f6",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_selOrderQueue]",
+  "time" : {
+    "start" : 1641872858237,
+    "stop" : 1641872858309,
+    "duration" : 72
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3d703c4e646a2726",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml-test_login_wrong_pwd]",
+  "time" : {
+    "start" : 1641872857502,
+    "stop" : 1641872857634,
+    "duration" : 132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c05e61f10c984c01",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_readyForPay]",
+  "time" : {
+    "start" : 1641872858366,
+    "stop" : 1641872858465,
+    "duration" : 99
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

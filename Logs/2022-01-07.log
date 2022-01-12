@@ -1,0 +1,497 @@
+2022-01-07 15:18:08,188 - base_api.py:[118] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 112, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:18:08,216 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:19:04,020 - base_api.py:[118] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 112, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:19:04,022 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:22:01,878 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-07 15:22:02,605 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\buyer_login.yaml,test_login is_skip=0 跳过执行
+2022-01-07 15:22:02,624 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\order.yaml,test_selOrderQueue is_skip=0 跳过执行
+2022-01-07 15:22:02,648 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:02,649 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-07 15:22:02,649 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml
+2022-01-07 15:22:02,655 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-07 15:22:02,664 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:22:02,664 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:22:02,802 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:22:02,802 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:22:02,802 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-07 15:22:02,803 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-07 15:22:02,803 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:22:02,803 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:22:02,803 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:22:02,804 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-07 15:22:02,804 - base_api.py:[126] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-07 15:22:02,804 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-07 15:22:02,804 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-07 15:22:02,804 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-07 15:22:02,804 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-07 15:22:02,805 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-07 15:22:02,805 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-07 15:22:02,818 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:02,818 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-07 15:22:02,818 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml
+2022-01-07 15:22:02,826 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml
+2022-01-07 15:22:02,832 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-07 15:22:02,841 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:22:02,842 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:22:02,946 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:88055cc607814e4b8054868e95c29cbf', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 15:22:02,946 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:88055cc607814e4b8054868e95c29cbf', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-07 15:22:02,946 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-07 15:22:02,946 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-07 15:22:02,946 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-07 15:22:02,946 - base_api.py:[261] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-07 15:22:02,954 - base_api.py:[78] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-07 15:22:02,956 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15200000001APP:88055cc607814e4b8054868e95c29cbf'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 10, 'code': 200, 'inviter': 19355, 'message': '调用成功。', 'superior': 19414, 'userId': 19414}, 'headers': {'app-sessionid': 'al:15200000001APP:88055cc607814e4b8054868e95c29cbf'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-07 15:22:02,956 - base_api.py:[95] - [INFO] - {'app-sessionid': 'al:15200000001APP:88055cc607814e4b8054868e95c29cbf'}
+2022-01-07 15:22:03,103 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/getUser::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:22:03,103 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-07 15:22:03,103 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-07 15:22:03,104 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:22:03,104 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:88055cc607814e4b8054868e95c29cbf', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}, 'test_getUser': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}}
+2022-01-07 15:22:03,114 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:22:03,115 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355}
+2022-01-07 15:22:03,115 - base_api.py:[126] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-07 15:22:03,116 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-07 15:22:03,116 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-07 15:22:03,116 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-07 15:22:03,116 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-07 15:22:03,117 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:19414】
+2022-01-07 15:22:03,117 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【userId:19414】,预期为：【userId:19414】
+2022-01-07 15:22:03,118 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【buyerLevel:10】
+2022-01-07 15:22:03,118 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【buyerLevel:10】,预期为：【buyerLevel:10】
+2022-01-07 15:22:03,118 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【superior:19414】
+2022-01-07 15:22:03,118 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【superior:19414】,预期为：【superior:19414】
+2022-01-07 15:22:03,119 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【inviter:19355】
+2022-01-07 15:22:03,119 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【inviter:19355】,预期为：【inviter:19355】
+2022-01-07 15:22:03,149 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:03,149 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_OrderQueue************
+2022-01-07 15:22:03,150 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\order.yaml
+2022-01-07 15:22:03,260 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-07 15:22:07,021 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-07 15:22:32,713 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-07 15:22:33,249 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\buyer_login.yaml,test_login is_skip=0 跳过执行
+2022-01-07 15:22:33,261 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\order.yaml,test_selOrderQueue is_skip=0 跳过执行
+2022-01-07 15:22:33,273 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:33,274 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-07 15:22:33,274 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,test_login_wrong_pwd
+2022-01-07 15:22:33,280 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-07 15:22:33,288 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:22:33,289 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:22:33,421 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:22:33,421 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:22:33,422 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-07 15:22:33,422 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-07 15:22:33,422 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:22:33,423 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:22:33,423 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:22:33,426 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-07 15:22:33,426 - base_api.py:[126] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-07 15:22:33,427 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-07 15:22:33,427 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-07 15:22:33,427 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-07 15:22:33,428 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-07 15:22:33,428 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-07 15:22:33,428 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-07 15:22:33,463 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:33,463 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-07 15:22:33,464 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,test_getUser
+2022-01-07 15:22:33,473 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,test_login
+2022-01-07 15:22:33,480 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-07 15:22:33,490 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:22:33,490 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:22:33,619 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 15:22:33,620 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-07 15:22:33,620 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-07 15:22:33,620 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-07 15:22:33,620 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-07 15:22:33,620 - base_api.py:[261] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-07 15:22:33,630 - base_api.py:[78] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-07 15:22:33,633 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 10, 'code': 200, 'inviter': 19355, 'message': '调用成功。', 'superior': 19414, 'userId': 19414}, 'headers': {'app-sessionid': 'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-07 15:22:33,633 - base_api.py:[95] - [INFO] - {'app-sessionid': 'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0'}
+2022-01-07 15:22:33,773 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/getUser::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:22:33,774 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-07 15:22:33,775 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-07 15:22:33,775 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:22:33,777 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:286a981402744d1a866cd0a1ebf8d4d0', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}, 'test_getUser': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}}
+2022-01-07 15:22:33,785 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:22:33,787 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355}
+2022-01-07 15:22:33,787 - base_api.py:[126] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-07 15:22:33,789 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-07 15:22:33,790 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-07 15:22:33,792 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-07 15:22:33,792 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-07 15:22:33,794 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:19414】
+2022-01-07 15:22:33,795 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【userId:19414】,预期为：【userId:19414】
+2022-01-07 15:22:33,797 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【buyerLevel:10】
+2022-01-07 15:22:33,797 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【buyerLevel:10】,预期为：【buyerLevel:10】
+2022-01-07 15:22:33,799 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【superior:19414】
+2022-01-07 15:22:33,799 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【superior:19414】,预期为：【superior:19414】
+2022-01-07 15:22:33,802 - base_api.py:[132] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【inviter:19355】
+2022-01-07 15:22:33,802 - base_api.py:[135] - [INFO] - 测试用例通过::接口实际响应值act_value为：【inviter:19355】,预期为：【inviter:19355】
+2022-01-07 15:22:33,837 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:22:33,838 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_OrderQueue************
+2022-01-07 15:22:33,838 - base_api.py:[173] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,test_OrderQueue
+2022-01-07 15:22:33,957 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-07 15:22:36,466 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-07 15:24:52,263 - base_api.py:[118] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 112, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:24:52,264 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:29:08,776 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-07 15:29:09,355 - base_api.py:[113] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-07 15:29:09,363 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\buyer_login.yaml,test_login is_skip=0 跳过执行
+2022-01-07 15:29:09,379 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\order.yaml,test_selOrderQueue is_skip=0 跳过执行
+2022-01-07 15:29:09,387 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:29:09,395 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:29:09,396 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-07 15:29:09,396 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:29:09,403 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-07 15:29:09,403 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:29:09,414 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:29:09,414 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:29:09,596 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:29:09,596 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:29:09,596 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-07 15:29:09,596 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-07 15:29:09,596 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:29:09,596 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:29:09,596 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:29:09,597 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-07 15:29:09,597 - base_api.py:[127] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-07 15:29:09,598 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-07 15:29:09,598 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-07 15:29:09,598 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-07 15:29:09,598 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-07 15:29:09,598 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-07 15:29:09,598 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-07 15:29:09,603 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:29:09,608 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:29:09,608 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-07 15:29:09,608 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:29:09,615 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:29:09,622 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-07 15:29:09,623 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:29:09,632 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:29:09,632 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:29:09,738 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 15:29:09,738 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-07 15:29:09,738 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-07 15:29:09,738 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-07 15:29:09,738 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-07 15:29:09,738 - base_api.py:[261] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-07 15:29:09,739 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:29:09,746 - base_api.py:[78] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-07 15:29:09,749 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 10, 'code': 200, 'inviter': 19355, 'message': '调用成功。', 'superior': 19414, 'userId': 19414}, 'headers': {'app-sessionid': 'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-07 15:29:09,749 - base_api.py:[95] - [INFO] - {'app-sessionid': 'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111'}
+2022-01-07 15:29:09,867 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/getUser::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:29:09,868 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-07 15:29:09,869 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-07 15:29:09,869 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:29:09,870 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:ae2948abbe8a40849f6770c2124e2111', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}, 'test_getUser': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}}
+2022-01-07 15:29:09,881 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:29:09,882 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355}
+2022-01-07 15:29:09,883 - base_api.py:[127] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-07 15:29:09,884 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-07 15:29:09,884 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-07 15:29:09,885 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-07 15:29:09,885 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-07 15:29:09,886 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:19414】
+2022-01-07 15:29:09,886 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【userId:19414】,预期为：【userId:19414】
+2022-01-07 15:29:09,887 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【buyerLevel:10】
+2022-01-07 15:29:09,887 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【buyerLevel:10】,预期为：【buyerLevel:10】
+2022-01-07 15:29:09,888 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【superior:19414】
+2022-01-07 15:29:09,888 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【superior:19414】,预期为：【superior:19414】
+2022-01-07 15:29:09,889 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【inviter:19355】
+2022-01-07 15:29:09,889 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【inviter:19355】,预期为：【inviter:19355】
+2022-01-07 15:29:09,902 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:29:09,914 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:29:09,914 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_OrderQueue************
+2022-01-07 15:29:09,915 - base_api.py:[113] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:29:10,029 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-07 15:29:12,589 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-07 15:30:04,503 - base_api.py:[119] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 112, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:30:04,503 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:30:21,019 - base_api.py:[112] - [INFO] - yaml_path:.\yaml_test_apiuyer_login.yaml,,,,test_login
+2022-01-07 15:30:21,020 - base_api.py:[120] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 114, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:30:21,020 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:31:13,919 - base_api.py:[112] - [INFO] - yaml_path:.\yaml_test_apiuyer_login.yaml,,,,test_login
+2022-01-07 15:31:13,920 - base_api.py:[120] - [ERROR] - 读取YAML文件:.\yaml_test_apiuyer_login.yaml出错:[Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 114, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+OSError: [Errno 22] Invalid argument: '.\\yaml_test_api\x08uyer_login.yaml'
+
+2022-01-07 15:31:13,920 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:35:07,530 - base_api.py:[112] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:35:07,531 - base_api.py:[120] - [ERROR] - 读取YAML文件:.\yaml_test_api\buyer_login.yaml出错:[Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 114, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'
+
+2022-01-07 15:35:07,531 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:37:53,204 - base_api.py:[120] - [ERROR] - 读取YAML文件:.\yaml_test_api\buyer_login.yaml出错:[Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 112, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'
+
+2022-01-07 15:37:53,205 - base_api.py:[62] - [INFO] - None
+2022-01-07 15:38:24,804 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-07 15:38:25,343 - base_api.py:[111] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-07 15:38:25,352 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\buyer_login.yaml,test_login is_skip=0 跳过执行
+2022-01-07 15:38:25,364 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\order.yaml,test_selOrderQueue is_skip=0 跳过执行
+2022-01-07 15:38:25,372 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:38:25,378 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:38:25,379 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-07 15:38:25,379 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:38:25,386 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-07 15:38:25,386 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:38:25,395 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:38:25,395 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:38:25,499 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:38:25,499 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:38:25,500 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-07 15:38:25,500 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-07 15:38:25,500 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:38:25,500 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:38:25,501 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:38:25,503 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-07 15:38:25,503 - base_api.py:[127] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-07 15:38:25,503 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-07 15:38:25,503 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-07 15:38:25,504 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-07 15:38:25,504 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-07 15:38:25,504 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-07 15:38:25,505 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-07 15:38:25,512 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:38:25,524 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:38:25,524 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-07 15:38:25,525 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:38:25,531 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:38:25,537 - base_api.py:[227] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-07 15:38:25,537 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:38:25,546 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:38:25,546 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:38:25,645 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 15:38:25,645 - base_api.py:[254] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-07 15:38:25,645 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-07 15:38:25,645 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-07 15:38:25,646 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-07 15:38:25,646 - base_api.py:[261] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-07 15:38:25,646 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:38:25,656 - base_api.py:[78] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-07 15:38:25,658 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 10, 'code': 200, 'inviter': 19355, 'message': '调用成功。', 'superior': 19414, 'userId': 19414}, 'headers': {'app-sessionid': 'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-07 15:38:25,659 - base_api.py:[95] - [INFO] - {'app-sessionid': 'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60'}
+2022-01-07 15:38:25,765 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/getUser::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:38:25,766 - base_api.py:[274] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-07 15:38:25,766 - base_api.py:[275] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-07 15:38:25,766 - base_api.py:[277] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:38:25,767 - base_api.py:[288] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:daaa3db9e38847b0be7ec22059f7fe60', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}, 'test_getUser': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}}
+2022-01-07 15:38:25,776 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:38:25,777 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355}
+2022-01-07 15:38:25,777 - base_api.py:[127] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-07 15:38:25,778 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-07 15:38:25,778 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-07 15:38:25,779 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-07 15:38:25,779 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-07 15:38:25,780 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:19414】
+2022-01-07 15:38:25,780 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【userId:19414】,预期为：【userId:19414】
+2022-01-07 15:38:25,781 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【buyerLevel:10】
+2022-01-07 15:38:25,781 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【buyerLevel:10】,预期为：【buyerLevel:10】
+2022-01-07 15:38:25,782 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【superior:19414】
+2022-01-07 15:38:25,782 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【superior:19414】,预期为：【superior:19414】
+2022-01-07 15:38:25,782 - base_api.py:[133] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【inviter:19355】
+2022-01-07 15:38:25,782 - base_api.py:[136] - [INFO] - 测试用例通过::接口实际响应值act_value为：【inviter:19355】,预期为：【inviter:19355】
+2022-01-07 15:38:25,795 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:38:25,807 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:38:25,807 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_OrderQueue************
+2022-01-07 15:38:25,807 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:38:25,929 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-07 15:38:28,424 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-07 15:39:13,492 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-07 15:39:14,020 - base_api.py:[111] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-07 15:39:14,020 - base_api.py:[114] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-07 15:39:14,028 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\buyer_login.yaml,test_login is_skip=0 跳过执行
+2022-01-07 15:39:14,040 - get_case.py:[37] - [INFO] - 测试用例:.\yaml_test_api\order.yaml,test_selOrderQueue is_skip=0 跳过执行
+2022-01-07 15:39:14,046 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,047 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,053 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:39:14,053 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-07 15:39:14,054 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,054 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,060 - base_api.py:[228] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-07 15:39:14,060 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,061 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-07 15:39:14,070 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:39:14,070 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:39:14,206 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:39:14,207 - base_api.py:[255] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:39:14,207 - base_api.py:[275] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-07 15:39:14,207 - base_api.py:[276] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-07 15:39:14,207 - base_api.py:[278] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:39:14,207 - base_api.py:[289] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-07 15:39:14,207 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-07 15:39:14,208 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-07 15:39:14,208 - base_api.py:[128] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-07 15:39:14,209 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-07 15:39:14,209 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-07 15:39:14,209 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-07 15:39:14,209 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-07 15:39:14,209 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-07 15:39:14,209 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-07 15:39:14,213 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,213 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,219 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:39:14,220 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-07 15:39:14,220 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,221 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,227 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:39:14,228 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:39:14,234 - base_api.py:[228] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-07 15:39:14,234 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:39:14,234 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:39:14,243 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-07 15:39:14,243 - base_api.py:[95] - [INFO] - None
+2022-01-07 15:39:14,361 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 15:39:14,361 - base_api.py:[255] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-07 15:39:14,361 - base_api.py:[275] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-07 15:39:14,362 - base_api.py:[276] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-07 15:39:14,362 - base_api.py:[278] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-07 15:39:14,362 - base_api.py:[262] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-07 15:39:14,362 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,362 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-07 15:39:14,370 - base_api.py:[78] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-07 15:39:14,373 - base_api.py:[94] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 10, 'code': 200, 'inviter': 19355, 'message': '调用成功。', 'superior': 19414, 'userId': 19414}, 'headers': {'app-sessionid': 'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-07 15:39:14,373 - base_api.py:[95] - [INFO] - {'app-sessionid': 'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac'}
+2022-01-07 15:39:14,482 - base_api.py:[100] - [INFO] - 接口::/api_v2/provider-app/paLogin/getUser::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:39:14,482 - base_api.py:[275] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-07 15:39:14,483 - base_api.py:[276] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-07 15:39:14,483 - base_api.py:[278] - [INFO] - 下游接口名far_api_name为None
+2022-01-07 15:39:14,483 - base_api.py:[289] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:1bc0714783ec419691a953af8d46d4ac', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}, 'test_getUser': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}}
+2022-01-07 15:39:14,487 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355, 'smallGold': None, 'openId': None, 'unionid': None, 'inviteName': 'Sara', 'rank': 1, 'rankName': None, 'nickName': '啵啵啵啵啵啵啵反反复', 'realName': '郭雨6584', 'avatar': 'http://img.chanbuyer.com/wsms2/head/7037da68-29cf-4a23-b4b8-39a7a366e6db_W600_H600.jpg', 'companyId': 1000, 'companyName': None, 'tel': '15200000001', 'gender': 1, 'status': None, 'invitationCode': '5ljNWq0i', 'identityId': '152104199409195920', 'passportId': 'G03247053', 'city': None, 'birthday': None, 'baAddressVo': {'addressId': '2021091017461470821268', 'userId': 19414, 'companyId': 1003, 'country': '中国', 'province': '新疆维吾尔自治区', 'city': '博尔塔拉蒙古自治州', 'district': '精河县', 'detail': '432222', 'name': 'ffffffsss', 'tel': '13244444444', 'status': 1, 'isDefault': 0, 'countryId': 1, 'provinceId': 3338, 'cityId': 3371, 'districtId': 3374, 'createTime': '2021-09-10T17:46:14.000+08:00', 'source': 'APP'}, 'oweFee': 0, 'icon': 'http://img.chanbuyer.com/wsms2/userRank/149b2b07-08a2-48ee-9d9c-ac3ea837f67e_W113_H42.png', 'balance': 972002666, 'serviceFee': None, 'benefitBalance': None, 'noBenefitBalance': None, 'scoreBalance': None, 'noScoreBalance': None, 'isSetPayPassword': 1, 'isSetLoginPassword': 1, 'isUpgrade': 0, 'map': None, 'ocrVo': {'ocrId': 375007, 'name': '港只要有啡发士大夫漂流蚌埠三中框架盟介', 'userId': 19414, 'identityNo': '40028119900533112X', 'status': 1, 'validStartTime': '1970-07-01T00:00:00.000+08:00', 'validEndTime': '1970-07-01T00:00:00.000+08:00', 'remark': '', 'createTime': '2021-03-29T16:27:37.000+08:00', 'lastUpdateTime': '2021-04-06T14:52:52.000+08:00', 'isDelete': 0, 'identityFrontUrl': '', 'identityBackUrl': '', 'isDefault': 0, 'orderWrapId': None, 'whetherInsert': None}}}}
+2022-01-07 15:39:14,488 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 19414, 'buyerLevel': 10, 'superior': 19414, 'inviter': 19355}
+2022-01-07 15:39:14,488 - base_api.py:[128] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-07 15:39:14,489 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-07 15:39:14,489 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-07 15:39:14,491 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-07 15:39:14,491 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-07 15:39:14,492 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:19414】
+2022-01-07 15:39:14,492 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【userId:19414】,预期为：【userId:19414】
+2022-01-07 15:39:14,494 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【buyerLevel:10】
+2022-01-07 15:39:14,494 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【buyerLevel:10】,预期为：【buyerLevel:10】
+2022-01-07 15:39:14,495 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【superior:19414】
+2022-01-07 15:39:14,495 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【superior:19414】,预期为：【superior:19414】
+2022-01-07 15:39:14,496 - base_api.py:[134] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【inviter:19355】
+2022-01-07 15:39:14,497 - base_api.py:[137] - [INFO] - 测试用例通过::接口实际响应值act_value为：【inviter:19355】,预期为：【inviter:19355】
+2022-01-07 15:39:14,518 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:39:14,519 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:39:14,542 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-07 15:39:14,542 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_OrderQueue************
+2022-01-07 15:39:14,542 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:39:14,542 - base_api.py:[114] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-07 15:39:14,672 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-07 15:39:16,969 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-07 15:40:23,480 - base_api.py:[111] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 15:40:23,481 - base_api.py:[120] - [ERROR] - 读取YAML文件:.\yaml_test_api\buyer_login.yaml出错:[Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 113, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'
+
+2022-01-07 15:40:23,481 - base_api.py:[62] - [INFO] - None
+2022-01-07 16:01:22,612 - base_api.py:[109] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:01:22,613 - base_api.py:[118] - [ERROR] - 读取YAML文件:.\yaml_test_api\buyer_login.yaml出错:[Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'::错误详情:Traceback (most recent call last):
+  File "D:/肖畅工作/ChuanchengProjecrs/buyer_api_order/py_page/base_api.py", line 111, in read_yaml
+    with open(yaml_path, "r", encoding="UTF-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '.\\yaml_test_api\\buyer_login.yaml'
+
+2022-01-07 16:02:52,146 - base_api.py:[109] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:02:52,146 - base_api.py:[112] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:03:52,165 - base_api.py:[110] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:03:52,165 - base_api.py:[113] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:03:52,171 - base_api.py:[61] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:52:22,589 - base_api.py:[111] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:52:22,589 - base_api.py:[114] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:52:22,595 - base_api.py:[61] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:52:22,868 - base_api.py:[63] - [INFO] - {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:2e4ced3b618d4011b9452132aa09b2b8', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-07 16:54:20,050 - base_api.py:[111] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:54:20,050 - base_api.py:[114] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:54:20,058 - base_api.py:[61] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:54:20,192 - base_api.py:[63] - [INFO] - {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15200000001APP:641b8c4814f3442d95011392b1b88efd', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}
+2022-01-07 16:55:07,489 - base_api.py:[111] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:55:07,489 - base_api.py:[114] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:55:07,494 - base_api.py:[61] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:55:07,614 - base_api.py:[63] - [INFO] - al:15200000001APP:7073667e5115422d87c3911611a37253
+2022-01-07 16:57:45,712 - base_api.py:[111] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:57:45,713 - base_api.py:[114] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:57:45,724 - base_api.py:[61] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:57:45,836 - base_api.py:[63] - [INFO] - al:15200000001APP:c92a07a2998b40e38cbb9e2b1b4fcb39
+2022-01-07 16:58:49,294 - base_api.py:[112] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:58:49,294 - base_api.py:[115] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 16:58:49,301 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 16:58:49,448 - base_api.py:[46] - [INFO] - {'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 08:58:50 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 16:58:49,449 - base_api.py:[64] - [INFO] - al:15200000001APP:c162a34b6c0d4f88b3ac9e0e784a93ec
+2022-01-07 17:00:46,431 - base_api.py:[112] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:00:46,431 - base_api.py:[115] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:00:46,439 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 17:00:46,548 - base_api.py:[46] - [INFO] - {'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 09:00:47 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 17:00:46,548 - base_api.py:[64] - [INFO] - {'sessionid': 'al:15200000001APP:d040f0ddafee4d05be14b663b77eba2f', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}
+2022-01-07 17:07:13,391 - base_api.py:[112] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:07:13,392 - base_api.py:[115] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:07:13,398 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 17:07:13,689 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 09:07:14 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 17:07:13,690 - base_api.py:[64] - [INFO] - {'sessionid': 'al:15200000001APP:6968014ba9d749909e0d29ab647af8df', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}
+2022-01-07 17:13:09,956 - base_api.py:[116] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:13:09,956 - base_api.py:[119] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:13:09,962 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 17:13:10,078 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 09:13:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 17:13:10,079 - base_api.py:[65] - [INFO] - {'sessionid': 'al:15200000001APP:ff609cff9a674550a09097611b66e4fd', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}
+2022-01-07 17:13:10,079 - base_api.py:[66] - [INFO] - {'sessionid': 'al:15200000001APP:ff609cff9a674550a09097611b66e4fd'}
+2022-01-07 17:21:38,000 - base_api.py:[120] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:21:38,001 - base_api.py:[123] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:21:38,007 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 17:21:38,117 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 09:21:38 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 17:21:38,118 - base_api.py:[65] - [INFO] - {'sessionid': 'al:15200000001APP:f72ed448dec2469f8d6757814280c997', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}
+2022-01-07 17:21:38,118 - base_api.py:[66] - [INFO] - {'app-sessionid': 'al:15200000001APP:f72ed448dec2469f8d6757814280c997'}
+2022-01-07 17:21:38,119 - base_api.py:[70] - [INFO] - api: /api_v2/provider-app/paLogin/login
+data: null
+depend: []
+except:
+  code: 200
+  message: "\u8C03\u7528\u6210\u529F\u3002"
+headers: null
+is_skip: 0
+json:
+  loginPassword: 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD
+
+    KZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC
+
+    5w8n9CWdf55pnDJ3UZU=
+
+    '
+  tel: '15200000001'
+method: post
+params: null
+tag: null
+
+2022-01-07 17:22:48,057 - base_api.py:[121] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:22:48,057 - base_api.py:[124] - [INFO] - yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-07 17:22:48,064 - base_api.py:[62] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'method': 'post', 'headers': None, 'params': None, 'data': None, 'json': {'tel': '15200000001', 'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n'}, 'except': {'code': 200, 'message': '调用成功。'}, 'depend': [], 'tag': None, 'is_skip': 0}
+2022-01-07 17:22:48,182 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Fri, 07 Jan 2022 09:22:48 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-07 17:22:48,182 - base_api.py:[65] - [INFO] - {'sessionid': 'al:15200000001APP:0bdb3d91ecde45fa91273114461a5af8', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}
+2022-01-07 17:22:48,182 - base_api.py:[66] - [INFO] - {'app-sessionid': 'al:15200000001APP:0bdb3d91ecde45fa91273114461a5af8'}
+2022-01-07 17:22:48,187 - base_api.py:[71] - [INFO] - {'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': 0, 'json': {'loginPassword': 'ExYypDg9IK/wi9EP/HMCS5Jav+rV3pWYjyr49qEiTUxe+oOXwjJNbKxZ4ZyYz42iGG6Th5jsaQhD\nKZQ1Sg/V/OK706EU9S+cXlJe6V9A6iwWcwm1cid/pSCjKwKNzUigO25e8xkIgvAVCKXcHhHrBaDC\n5w8n9CWdf55pnDJ3UZU=\n', 'tel': '15200000001'}, 'method': 'post', 'params': None, 'tag': None}

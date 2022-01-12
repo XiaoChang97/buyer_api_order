@@ -1,0 +1,103 @@
+{
+  "uid" : "2aae00a04bbae99e",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml-test_true_OrderQueue]",
+  "fullName" : "test_case_temple.test_temple.TestTemple#test_case_temple",
+  "historyId" : "3bee16cc9fc42a576ea75801b9909d32",
+  "time" : {
+    "start" : 1641872858021,
+    "stop" : 1641872858063,
+    "duration" : 42
+  },
+  "status" : "broken",
+  "statusMessage" : "IndexError: list index out of range",
+  "statusTrace" : "self = <test_case_temple.test_temple.TestTemple object at 0x000001E8A970F080>\npath = 'D:\\\\肖畅工作\\\\ChuanchengProjecrs\\\\buyer_api_order\\\\yaml_test_api\\\\order.yaml'\napi = 'test_true_OrderQueue'\n\n    @pytest.mark.parametrize('path,api',params)\n    def test_case_temple(self, path, api):\n    \tyaml_api_datas = BaseApi.read_yaml(path,api)\n    \tlogging.info(f'************测试用例开始执行测试接口****************')\n    \tlogging.info(f'用例yaml文件路径：{path}，用例名称：{api}************')\n    \twith allure.step(f\"对接口【{path}:{api}】进行测试\"):\n>   \t\tres = self.make_keys_requests(path, api)\n\ntest_case_temple\\test_temple.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npy_page\\base_api.py:268: in make_keys_requests\n    top_res_dic, api_depend_dic_list, api_path, api_depend_keys = self.get_top_res_dic(path, test_api)\npy_page\\base_api.py:241: in get_top_res_dic\n    api_dic, api_path, api_depend_keys = self.get_api_depend_dic(path, test_api)\npy_page\\base_api.py:214: in get_api_depend_dic\n    get_depend_dic(path, test_api)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nyaml_path = 'D:\\\\肖畅工作\\\\ChuanchengProjecrs\\\\buyer_api_order\\\\yaml_test_api\\\\order.yaml'\napi = 'test_true_OrderQueue', last_depend_dic = {}\n\n    def get_depend_dic(yaml_path, api, last_depend_dic=None,):\n        # 测试api，此时层层传递过来的api传参时用例中的case名称\n        # 判断yaml中api的depend依赖\n        if last_depend_dic is None:\n            last_depend_dic = depend_api_dic[test_api]\n        else:\n            pass\n        dic_api_datas = BaseApi.read_yaml(yaml_path, api)  # 调用read_yaml读取接口的yaml数据返回一个字典\n        '''\n        例：yaml_path=‘.\\yaml_test_api\\buyer_login.yaml’，api='test_login',\n        dic_api_datas = BaseApi.read_yaml(yaml_path, api)返回\n        {api: '/api_v2/provider-app/paLogin/login',method: 'post'......depend: []}\n        '''\n        depend = dic_api_datas['depend']\n        api_depend_keys[api] = {}\n        if depend:  # depend -> [{'api':[path, api_name], 'keys':[xxx]},{'api':[xxx], 'keys':[xxx]}]\n            logging.info(f'depend::{depend}')\n            for d_api in depend:  # d_api -> {'api':[path, api_name], 'keys':[xxx]}\n                #例：api_depend_keys={'test_OrderQueue':{'test_login':['sessionid']}}\n                logging.info(f'd_api::{d_api}')\n>               api_depend_keys[api][d_api['api'][1]] = d_api['keys']\nE               IndexError: list index out of range\n\npy_page\\base_api.py:206: IndexError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "IndexError: list index out of range",
+    "statusTrace" : "self = <test_case_temple.test_temple.TestTemple object at 0x000001E8A970F080>\npath = 'D:\\\\肖畅工作\\\\ChuanchengProjecrs\\\\buyer_api_order\\\\yaml_test_api\\\\order.yaml'\napi = 'test_true_OrderQueue'\n\n    @pytest.mark.parametrize('path,api',params)\n    def test_case_temple(self, path, api):\n    \tyaml_api_datas = BaseApi.read_yaml(path,api)\n    \tlogging.info(f'************测试用例开始执行测试接口****************')\n    \tlogging.info(f'用例yaml文件路径：{path}，用例名称：{api}************')\n    \twith allure.step(f\"对接口【{path}:{api}】进行测试\"):\n>   \t\tres = self.make_keys_requests(path, api)\n\ntest_case_temple\\test_temple.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npy_page\\base_api.py:268: in make_keys_requests\n    top_res_dic, api_depend_dic_list, api_path, api_depend_keys = self.get_top_res_dic(path, test_api)\npy_page\\base_api.py:241: in get_top_res_dic\n    api_dic, api_path, api_depend_keys = self.get_api_depend_dic(path, test_api)\npy_page\\base_api.py:214: in get_api_depend_dic\n    get_depend_dic(path, test_api)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nyaml_path = 'D:\\\\肖畅工作\\\\ChuanchengProjecrs\\\\buyer_api_order\\\\yaml_test_api\\\\order.yaml'\napi = 'test_true_OrderQueue', last_depend_dic = {}\n\n    def get_depend_dic(yaml_path, api, last_depend_dic=None,):\n        # 测试api，此时层层传递过来的api传参时用例中的case名称\n        # 判断yaml中api的depend依赖\n        if last_depend_dic is None:\n            last_depend_dic = depend_api_dic[test_api]\n        else:\n            pass\n        dic_api_datas = BaseApi.read_yaml(yaml_path, api)  # 调用read_yaml读取接口的yaml数据返回一个字典\n        '''\n        例：yaml_path=‘.\\yaml_test_api\\buyer_login.yaml’，api='test_login',\n        dic_api_datas = BaseApi.read_yaml(yaml_path, api)返回\n        {api: '/api_v2/provider-app/paLogin/login',method: 'post'......depend: []}\n        '''\n        depend = dic_api_datas['depend']\n        api_depend_keys[api] = {}\n        if depend:  # depend -> [{'api':[path, api_name], 'keys':[xxx]},{'api':[xxx], 'keys':[xxx]}]\n            logging.info(f'depend::{depend}')\n            for d_api in depend:  # d_api -> {'api':[path, api_name], 'keys':[xxx]}\n                #例：api_depend_keys={'test_OrderQueue':{'test_login':['sessionid']}}\n                logging.info(f'd_api::{d_api}')\n>               api_depend_keys[api][d_api['api'][1]] = d_api['keys']\nE               IndexError: list index out of range\n\npy_page\\base_api.py:206: IndexError",
+    "steps" : [ {
+      "name" : "对接口【D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml:test_true_OrderQueue】进行测试",
+      "time" : {
+        "start" : 1641872858042,
+        "stop" : 1641872858062,
+        "duration" : 20
+      },
+      "status" : "broken",
+      "statusMessage" : "IndexError: list index out of range\n",
+      "statusTrace" : "  File \"D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\test_case_temple\\test_temple.py\", line 20, in test_case_temple\n    res = self.make_keys_requests(path, api)\n  File \"D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\py_page\\base_api.py\", line 268, in make_keys_requests\n    top_res_dic, api_depend_dic_list, api_path, api_depend_keys = self.get_top_res_dic(path, test_api)\n  File \"D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\py_page\\base_api.py\", line 241, in get_top_res_dic\n    api_dic, api_path, api_depend_keys = self.get_api_depend_dic(path, test_api)\n  File \"D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\py_page\\base_api.py\", line 214, in get_api_depend_dic\n    get_depend_dic(path, test_api)\n  File \"D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\py_page\\base_api.py\", line 206, in get_depend_dic\n    api_depend_keys[api][d_api['api'][1]] = d_api['keys']\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "a3812b690d43a2d1",
+      "name" : "log",
+      "source" : "a3812b690d43a2d1.txt",
+      "type" : "text/plain",
+      "size" : 1178
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case_temple"
+  }, {
+    "name" : "suite",
+    "value" : "test_temple"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTemple"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-16V98TN"
+  }, {
+    "name" : "thread",
+    "value" : "1960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case_temple.test_temple"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api",
+    "value" : "'test_true_OrderQueue'"
+  }, {
+    "name" : "path",
+    "value" : "'D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2aae00a04bbae99e.json",
+  "parameterValues" : [ "'test_true_OrderQueue'", "'D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\order.yaml'" ]
+}

@@ -1,0 +1,19 @@
+test_add_goods_to_shopCar: # 测试把商品加入购物车
+  api: /api_v2/provider-app/shoppingCart/addGoodsToShoppingCart
+  method: post
+  headers: {'app-sessionid':$sessionid}
+  params: ~
+  data: ~
+  json: {"cloudSkuId":31981,"skuNum":1}
+  except: {"code":200,"message":"调用成功。","result":"添加购物车成功"}
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml','test_login'], 'keys':['sessionid']}]
+  tag: ~
+  is_skip: ~
+
+
+
+
+
+
+
+

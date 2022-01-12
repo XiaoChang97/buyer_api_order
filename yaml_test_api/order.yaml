@@ -1,0 +1,66 @@
+test_true_OrderQueue: # 测试下单排队
+  api: /api_v2/provider-app/paOrder/OrderQueue
+  method: post
+  headers: {'app-sessionid':$sessionid}
+  params: ~
+  data: ~
+  json: {"buildOrderDto":{"addressId":"2022011015212738650629","areaId":844,"bgCSkusWithPromotionDTO":{"cskusWithoutPromotion":[{"buyerPrice":0,"cskuId":33655,"discountUnitPrice":0,"goldPrice":0,"groupPrice":1,"haveChosen":true,"promotionNum":0,"realTotalPrice":0,"realUnitPrice":0,"shopCartCSku":{"aPrice":1,"attributes":[{"key":"规格","value":"③2袋/组（400g牛油+400g蕃茄）"}],"bPrice":1,"cskuId":33655,"cspuId":5257,"delivery":1,"goodsType":1,"groupPrice":1,"isRegister":1,"limitMode":0,"limitNum":998,"num":1,"pic":"https://img.chananchor.com/xss/goods/481bf353-5f9e-4cd5-9f4a-50f6adecb6e2_compress_W160_H160.jpg","preIncome":0,"skuId":32857,"smallGoldPrice":1,"spuId":4640,"status":1,"supplierName":"我是买手商城","title":"接口测试","type":1},"skuNum":1,"smallGoldPrice":0}],"promotionAndCSkus":[],"totalChosenPrice":1,"totalChosenRealPrice":1},"buyerId":186220,"cheapAmount":0,"cloudSkuIds":[33655],"cspuIds":[5257],"freightAmount":0,"isGroupOrder":2,"mark":"","needCleanShopCart":false,"ocrId":0,"orderItems":[{"cloudSkuId":33655,"cspuId":5257,"isPromotion":0,"promotionId":0,"promotionUnitPrice":0,"skuNum":1,"unitPrice":1}],"orderType":1,"preferentialID":0,"productAmount":1,"realPayAmount":1,"skuIds":[32857]},"sendMessageTime":0}
+  except: {"code":200,"status":1,"message":"调用成功。"}
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml'], 'keys':['sessionid']}]
+  tag: ~
+  is_skip: ~
+
+test_selOrderQueue_loding: # 测试下单排队消费,排队中
+  api: /api_v2/provider-app/paOrder/selOrderQueue
+  method: get
+  headers: {'app-sessionid':$sessionid}
+  params: { "queueNumber":$queueNumber }
+  data: ~
+  json: ~
+  except: {"code":301022,"message":"排队中","result":~}
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml','test_login'], 'keys':['sessionid']},{'api':['.\yaml_test_api\order.yaml','test_true_OrderQueue'], 'keys':['queueNumber']}]
+  tag: ~
+  is_skip: ~
+
+test_selOrderQueue: # 测试下单排队消费成功
+  api: /api_v2/provider-app/paOrder/selOrderQueue
+  method: get
+  headers: {'app-sessionid':$sessionid}
+  params: { "queueNumber":$queueNumber }
+  data: ~
+  json: ~
+  except: {"code":200,"message":"调用成功。","result":~}
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml','test_login'], 'keys':['sessionid']},{'api':['.\yaml_test_api\order.yaml','test_true_OrderQueue'], 'keys':['queueNumber']}]
+  tag: ~
+  is_skip: ~
+
+test_readyForPay: # 测试建支付流水(余额支付)
+  api: /api_v2/provider-app/paPay/readyForPay
+  method: post
+  headers: { 'app-sessionid': $sessionid }
+  params: ~
+  data: ~
+  json: {"orderWrapId":$orderWrapId,"payMethod":1}
+  except: { "code": 200,"message": "调用成功。","result": ~ }
+  depend: [ { 'api': [ '.\yaml_test_api\buyer_login.yaml','test_login' ], 'keys': [ 'sessionid' ] },{ 'api': [ '.\yaml_test_api\order.yaml','test_selOrderQueue' ], 'keys': ['orderWrapId']}]
+  tag: ~
+  is_skip: ~
+
+test_balancePay: # 测试余额支付
+  api: /api_v2/provider-app/paPay/balancePay
+  method: post
+  headers: { 'app-sessionid': $sessionid }
+  params: ~
+  data: ~
+  json: {"payId":$payId,"payPassWord":"CzuUgvJa64BKyEJW39bb8qm8JiYoH58EAOE6NlB+1LlzBldx9O9l6SJtpilev98ZGskT9V8qNsqC\nuagR8I7mx8sAOoXB5qeGd/rq2ILD+BYISnhAoU/WOsEKxE+CkdbMsayb2hUWDVJ0mHx7IqcRdHk+\nC1/4bQTnoECPgLSjXNw=\n"}
+  except: { "code": 200,"message": "调用成功。","result": ~ }
+  depend: [ { 'api': [ '.\yaml_test_api\buyer_login.yaml','test_login' ], 'keys': [ 'sessionid' ] },{ 'api': [ '.\yaml_test_api\order.yaml','test_readyForPay' ], 'keys': ['payId']}]
+  tag: ~
+  is_skip: ~
+
+
+
+
+
+
+

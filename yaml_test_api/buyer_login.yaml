@@ -1,0 +1,50 @@
+test_login: # 用正确的账号密码登录
+  api: /api_v2/provider-app/paLogin/login
+  method: post
+  headers: ~
+  params: ~
+  data: ~
+  json: {
+          "tel": "15500000005",
+          "loginPassword": "yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88=
+"
+         }
+  except: {"code":200, "message":"调用成功。"}
+  #depend: [{'api':['../yaml_api_old/registerlogin_page.yaml','account_login'], 'keys':['token']},{'api':['../yaml_api_old/registerlogin_page.yaml','sms_login'], 'keys':['token']}]
+  depend: []
+  tag: ~
+  is_skip: ~
+
+test_login_wrong_pwd: # 用错误的密码登录
+  api: /api_v2/provider-app/paLogin/login
+  method: post
+  headers: ~
+  params: ~
+  data: ~
+  json: {
+          "tel": "15500000005",
+          "loginPassword": "TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n"
+         }
+  except: {"code":2012,"message":"密码不正确",'result':~}
+  depend: []
+  tag: ~
+  is_skip: ~
+
+test_getUser: # 获取买手信息
+  api: /api_v2/provider-app/paLogin/getUser
+  method: get
+  headers: {'app-sessionid':$sessionid}
+  params: ~
+  data: ~
+  json: ~
+  except: {"code":200, "message":"调用成功。", "userId":186220,"buyerLevel":11,"superior":186216,"inviter":186218 }
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml','test_login'], 'keys':['sessionid']}]
+  tag: ~
+  is_skip: ~
+
+
+
+
+
+
+

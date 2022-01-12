@@ -1,0 +1,342 @@
+2022-01-10 16:19:23,274 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-10 16:19:24,265 - base_api.py:[121] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-10 16:19:24,265 - base_api.py:[124] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-10 16:19:24,356 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,356 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,362 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:24,362 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login************
+2022-01-10 16:19:24,363 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,364 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,370 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_login': {}}
+2022-01-10 16:19:24,370 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,371 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,380 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88= ', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:19:24,380 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:19:24,508 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:19:23 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:19:24,510 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:12ddd4abb97c4f80b223d6ebb0070eb7', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:19:24,511 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:12ddd4abb97c4f80b223d6ebb0070eb7', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:19:24,511 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-10 16:19:24,512 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-10 16:19:24,512 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:19:24,513 - base_api.py:[299] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:12ddd4abb97c4f80b223d6ebb0070eb7', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:19:24,513 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:12ddd4abb97c4f80b223d6ebb0070eb7', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:19:24,519 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。'}
+2022-01-10 16:19:24,519 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message'])
+2022-01-10 16:19:24,521 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-10 16:19:24,522 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-10 16:19:24,523 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-10 16:19:24,523 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-10 16:19:24,532 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,533 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,541 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:24,542 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-10 16:19:24,542 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,542 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,549 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-10 16:19:24,550 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,550 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:19:24,560 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:19:24,560 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:19:24,647 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:19:23 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:19:24,647 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-10 16:19:24,648 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-10 16:19:24,648 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-10 16:19:24,648 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-10 16:19:24,648 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:19:24,649 - base_api.py:[299] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-10 16:19:24,649 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-10 16:19:24,649 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-10 16:19:24,650 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-10 16:19:24,650 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-10 16:19:24,650 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-10 16:19:24,663 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-10 16:19:24,663 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-10 16:19:24,663 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-10 16:19:24,664 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-10 16:19:24,671 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,672 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,681 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:24,681 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-10 16:19:24,681 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,681 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,687 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,688 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,694 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-10 16:19:24,694 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,695 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:24,706 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88= ', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:19:24,706 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:19:24,811 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:19:23 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:19:24,812 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:5b568ecbffe640c08593f44928a4ddb3', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:19:24,812 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:5b568ecbffe640c08593f44928a4ddb3', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:19:24,812 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-10 16:19:24,812 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-10 16:19:24,812 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-10 16:19:24,812 - base_api.py:[272] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-10 16:19:24,813 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,813 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:19:24,821 - base_api.py:[88] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-10 16:19:24,823 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15500000005APP:5b568ecbffe640c08593f44928a4ddb3'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 11, 'code': 200, 'inviter': 186218, 'message': '调用成功。', 'superior': 18216, 'userId': 186221}, 'headers': {'app-sessionid': 'al:15500000005APP:5b568ecbffe640c08593f44928a4ddb3'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-10 16:19:24,824 - base_api.py:[105] - [INFO] - {'app-sessionid': 'al:15500000005APP:5b568ecbffe640c08593f44928a4ddb3'}
+2022-01-10 16:19:24,997 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-10 16:19:24,998 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-10 16:19:24,999 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:19:25,030 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 186221, 'buyerLevel': 11, 'superior': 18216, 'inviter': 186218}
+2022-01-10 16:19:25,031 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior', 'inviter'])
+2022-01-10 16:19:25,032 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-10 16:19:25,032 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-10 16:19:25,033 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-10 16:19:25,034 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-10 16:19:25,035 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:186220】
+2022-01-10 16:19:25,035 - base_api.py:[150] - [INFO] - ************测试用例执行失败::接口实际响应值act_value为：【userId:186220】,预期为：【userId:186221】************
+2022-01-10 16:19:25,123 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:19:25,124 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:19:25,143 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:25,143 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_true_OrderQueue************
+2022-01-10 16:19:25,143 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:19:25,144 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:19:25,220 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:19:25,221 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:19:25,248 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:25,248 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_selOrderQueue_loding************
+2022-01-10 16:19:25,248 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:19:25,248 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:19:25,267 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,267 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,273 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,274 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,293 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:19:25,331 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,331 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,350 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:25,350 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_selOrderQueue************
+2022-01-10 16:19:25,350 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,351 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,370 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,370 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,377 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,377 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,398 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:19:25,426 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,427 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,449 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:25,449 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_readyForPay************
+2022-01-10 16:19:25,450 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,450 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,472 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,472 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,479 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,479 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,500 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,500 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,506 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,507 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,527 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:19:25,560 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:19:25,560 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:19:25,581 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:19:25,582 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_balancePay************
+2022-01-10 16:19:25,582 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:19:25,582 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:19:25,609 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,609 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,617 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,618 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:19:25,639 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,639 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,646 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,646 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:19:25,668 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,668 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:19:25,674 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,674 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:19:25,694 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:19:25,812 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-10 16:19:29,935 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功
+2022-01-10 16:27:07,839 - run.py:[12] - [INFO] - run_testCase::正在执行测试命令：python -m pytest -vs ./test_case_temple/ -s -q --clean-alluredir --alluredir=./result/
+2022-01-10 16:27:08,416 - base_api.py:[121] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-10 16:27:08,416 - base_api.py:[124] - [INFO] - yaml_path:.\common\config.yaml,,,,get_case
+2022-01-10 16:27:08,451 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,451 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,458 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:08,458 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login************
+2022-01-10 16:27:08,458 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,459 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,464 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_login': {}}
+2022-01-10 16:27:08,464 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,465 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,479 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88= ', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:27:08,479 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:27:08,634 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:27:07 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:27:08,636 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1d2e745b38d54e63a5ca9306bb2f813d', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:27:08,636 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1d2e745b38d54e63a5ca9306bb2f813d', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:27:08,637 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-10 16:27:08,637 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-10 16:27:08,638 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:27:08,638 - base_api.py:[299] - [INFO] - 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1d2e745b38d54e63a5ca9306bb2f813d', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:27:08,639 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1d2e745b38d54e63a5ca9306bb2f813d', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:27:08,642 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。'}
+2022-01-10 16:27:08,643 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message'])
+2022-01-10 16:27:08,644 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-10 16:27:08,645 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-10 16:27:08,646 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-10 16:27:08,646 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-10 16:27:08,663 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,664 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,685 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:08,685 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+2022-01-10 16:27:08,686 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,686 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,695 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+2022-01-10 16:27:08,695 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,696 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+2022-01-10 16:27:08,705 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:27:08,705 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:27:08,837 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:27:07 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:27:08,838 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-10 16:27:08,838 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-10 16:27:08,839 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+2022-01-10 16:27:08,839 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login_wrong_pwd
+2022-01-10 16:27:08,840 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:27:08,840 - base_api.py:[299] - [INFO] - 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+2022-01-10 16:27:08,840 - test_temple.py:[22] - [INFO] - 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+2022-01-10 16:27:08,841 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+2022-01-10 16:27:08,842 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message', 'result'])
+2022-01-10 16:27:08,842 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:2012】
+2022-01-10 16:27:08,843 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+2022-01-10 16:27:08,843 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+2022-01-10 16:27:08,844 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+2022-01-10 16:27:08,844 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【result:None】
+2022-01-10 16:27:08,845 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】
+2022-01-10 16:27:08,860 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:08,861 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:08,893 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:08,893 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\buyer_login.yaml，用例名称：test_getUser************
+2022-01-10 16:27:08,894 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:08,894 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:08,906 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,906 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,916 - base_api.py:[238] - [INFO] - 测试接口依赖树为：{'test_getUser': {'test_login': {}}}
+2022-01-10 16:27:08,917 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,917 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:08,928 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88= ', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+2022-01-10 16:27:08,928 - base_api.py:[105] - [INFO] - None
+2022-01-10 16:27:09,031 - base_api.py:[46] - [INFO] - 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Mon, 10 Jan 2022 08:27:07 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2022-01-10 16:27:09,032 - base_api.py:[110] - [INFO] - 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1c22f587a9d148529d0798e4469c0e58', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+2022-01-10 16:27:09,032 - base_api.py:[265] - [INFO] - top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:1c22f587a9d148529d0798e4469c0e58', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+2022-01-10 16:27:09,032 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+2022-01-10 16:27:09,033 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_login
+2022-01-10 16:27:09,033 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为test_getUser
+2022-01-10 16:27:09,033 - base_api.py:[272] - [INFO] - api_depend_keys[api_name]:{'test_login': ['sessionid']}
+2022-01-10 16:27:09,034 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:09,035 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_getUser
+2022-01-10 16:27:09,060 - base_api.py:[88] - [INFO] - 查看kwargs.keys()dict_keys(['sessionid'])
+2022-01-10 16:27:09,068 - base_api.py:[104] - [INFO] - 读取YAML文件::.\yaml_test_api\buyer_login.yaml::请求的接口名称::test_getUser::传入接口参数(sessionid)::{'sessionid': "'al:15500000005APP:1c22f587a9d148529d0798e4469c0e58'"}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/getUser', 'data': None, 'depend': [{'api': ['.\\yaml_test_api\\buyer_login.yaml', 'test_login'], 'keys': ['sessionid']}], 'except': {'buyerLevel': 11, 'code': 200, 'message': '调用成功。', 'superior': 18216, 'userId': 186221}, 'headers': {'app-sessionid': 'al:15500000005APP:1c22f587a9d148529d0798e4469c0e58'}, 'is_skip': None, 'json': None, 'method': 'get', 'params': None, 'tag': None}
+2022-01-10 16:27:09,069 - base_api.py:[105] - [INFO] - {'app-sessionid': 'al:15500000005APP:1c22f587a9d148529d0798e4469c0e58'}
+2022-01-10 16:27:09,237 - base_api.py:[285] - [INFO] - 接口响应数据字典集top_res_dic为：dict_keys(['test_login', 'test_getUser'])
+2022-01-10 16:27:09,237 - base_api.py:[286] - [INFO] - 从top_res_dic获取到接口名api为test_getUser
+2022-01-10 16:27:09,237 - base_api.py:[288] - [INFO] - 下游接口名far_api_name为None
+2022-01-10 16:27:09,270 - test_temple.py:[24] - [INFO] - 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。', 'userId': 186221, 'buyerLevel': 11, 'superior': 18216}
+2022-01-10 16:27:09,271 - base_api.py:[138] - [INFO] - dict_keys(['code', 'message', 'userId', 'buyerLevel', 'superior'])
+2022-01-10 16:27:09,272 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【code:200】
+2022-01-10 16:27:09,272 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+2022-01-10 16:27:09,274 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+2022-01-10 16:27:09,274 - base_api.py:[147] - [INFO] - 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】
+2022-01-10 16:27:09,275 - base_api.py:[144] - [INFO] - 测试用例中获取到接口的断言实际值为:: 【userId:186220】
+2022-01-10 16:27:09,275 - base_api.py:[150] - [INFO] - ************测试用例执行失败::接口实际响应值act_value为：【userId:186220】,预期为：【userId:186221】************
+2022-01-10 16:27:09,365 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:27:09,365 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:27:09,386 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:09,386 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_true_OrderQueue************
+2022-01-10 16:27:09,386 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:27:09,386 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_true_OrderQueue
+2022-01-10 16:27:09,427 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:27:09,427 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:27:09,454 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:09,454 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_selOrderQueue_loding************
+2022-01-10 16:27:09,455 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:27:09,455 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue_loding
+2022-01-10 16:27:09,476 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,477 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,485 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,485 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,512 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:27:09,535 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,536 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,557 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:09,558 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_selOrderQueue************
+2022-01-10 16:27:09,558 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,558 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,585 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,586 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,592 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,593 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,612 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:27:09,642 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,642 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,662 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:09,662 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_readyForPay************
+2022-01-10 16:27:09,662 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,663 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,684 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,684 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,690 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,690 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,715 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,716 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,724 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,724 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,743 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:27:09,770 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:27:09,770 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:27:09,791 - test_temple.py:[17] - [INFO] - ************测试用例开始执行测试接口****************
+2022-01-10 16:27:09,791 - test_temple.py:[18] - [INFO] - 用例yaml文件路径：.\yaml_test_api\order.yaml，用例名称：test_balancePay************
+2022-01-10 16:27:09,791 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:27:09,792 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_balancePay
+2022-01-10 16:27:09,811 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,811 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,817 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,817 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_readyForPay
+2022-01-10 16:27:09,839 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,839 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,845 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,846 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_selOrderQueue
+2022-01-10 16:27:09,866 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,866 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\buyer_login.yaml,,,,test_login
+2022-01-10 16:27:09,872 - base_api.py:[121] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,873 - base_api.py:[124] - [INFO] - yaml_path:.\yaml_test_api\order.yaml,,,,test_OrderQueue
+2022-01-10 16:27:09,892 - base_api.py:[130] - [ERROR] - 读取YAML文件:.\yaml_test_api\order.yaml出错:'test_OrderQueue'::错误详情:Traceback (most recent call last):
+  File "D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\py_page\base_api.py", line 126, in read_yaml
+    dic_api_datas = yaml_datas[f'{title}']  # title：config.yaml中get_case部分，根据接口名字获取该接口的请求数据，返回一个字典对象
+KeyError: 'test_OrderQueue'
+
+2022-01-10 16:27:10,038 - run.py:[20] - [INFO] - run_testCase::测试执行完毕，正在执行生成报告命令：allure generate ./result/ -o ./allure-report/ --clean
+2022-01-10 16:27:12,910 - zip_file.py:[19] - [INFO] - 文件：./allure-report 压缩成功

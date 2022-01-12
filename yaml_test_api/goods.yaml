@@ -1,0 +1,19 @@
+test_get_goods_detail: # 测试获取商品详情
+  api: /api_v2/provider-app/paGoods/selRecommendByCloudSpuId/
+  method: get
+  headers: {'app-sessionid':$sessionid}
+  params: { "cloudSpuId":"4961" }
+  data: ~
+  json: ~
+  except: {"code":200, "message":"调用成功。","cskuIds": [32021, 32022, 32023, 32024, 32025, 32026, 32027, 32028]}
+  depend: [{'api':['.\yaml_test_api\buyer_login.yaml','test_login'], 'keys':['sessionid']}]
+  tag: ~
+  is_skip: ~
+
+
+
+
+
+
+
+

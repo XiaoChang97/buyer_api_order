@@ -1,0 +1,25 @@
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     test_case_temple.test_temple:test_temple.py:17 ************测试用例开始执行测试接口****************
+INFO     test_case_temple.test_temple:test_temple.py:18 用例yaml文件路径：D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml，用例名称：test_login************
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:242 测试接口依赖树为：{'test_login': {}}
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login
+INFO     py_page.base_api:base_api.py:104 读取YAML文件::D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 200, 'message': '调用成功。'}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'yo5jIbR7OjNahkZsbNS/bMHMfnrJ2NGtpaAb+pVCsPv/P+e2IXJ6Rx/51RQWcjbj/OmTYFRE7jWDwIoHIuT/v0kiYvFwTctDzgbo0js+7ctNHYiefRC0I4W+LfEP8+72E74xpDbA08Eo0w0q61EuHIXQRhL18e9oO1V9ZjPcW88= ', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+INFO     py_page.base_api:base_api.py:105 None
+INFO     py_page.base_api:base_api.py:46 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Tue, 11 Jan 2022 03:47:37 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+INFO     py_page.base_api:base_api.py:110 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:99180a4081ee414a887afba1309ddfb9', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+INFO     py_page.base_api:base_api.py:269 top_res_dic是：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:99180a4081ee414a887afba1309ddfb9', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+INFO     py_page.base_api:base_api.py:289 接口响应数据字典集top_res_dic为：dict_keys(['test_login'])
+INFO     py_page.base_api:base_api.py:290 从top_res_dic获取到接口名api为test_login
+INFO     py_page.base_api:base_api.py:292 下游接口名far_api_name为None
+INFO     py_page.base_api:base_api.py:303 所有接口响应集top_res_dic为：{'test_login': {'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:99180a4081ee414a887afba1309ddfb9', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}}
+INFO     test_case_temple.test_temple:test_temple.py:22 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 200, 'message': '调用成功。', 'result': {'sessionid': 'al:15500000005APP:99180a4081ee414a887afba1309ddfb9', 'orderWrapId': None, 'status': 1, 'type': None, 'isWechat': 1, 'isCertification': 1}}}
+INFO     test_case_temple.test_temple:test_temple.py:24 测试用例中从yaml中获取到的期望值exc为{'code': 200, 'message': '调用成功。'}
+INFO     py_page.base_api:base_api.py:140 dict_keys(['code', 'message'])
+INFO     py_page.base_api:base_api.py:146 测试用例中获取到接口的断言实际值为:: 【code:200】
+INFO     py_page.base_api:base_api.py:149 测试用例通过::接口实际响应值act_value为：【code:200】,预期为：【code:200】
+INFO     py_page.base_api:base_api.py:146 测试用例中获取到接口的断言实际值为:: 【message:调用成功。】
+INFO     py_page.base_api:base_api.py:149 测试用例通过::接口实际响应值act_value为：【message:调用成功。】,预期为：【message:调用成功。】

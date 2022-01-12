@@ -1,0 +1,27 @@
+
+#配置测试用例执行
+get_case:
+  case_path: ['.\yaml_test_api\buyer_login.yaml','.\yaml_test_api\order.yaml']
+  case_tag: ~
+
+
+
+
+# 邮件发送配置
+Email:
+  -
+    mail_host: "smtp.qq.com"
+    mail_user: "372109913"
+    mail_pass: "fyrwqnzwikyicbdg"
+    sender: '372109913@qq.com'
+    receives: ['smilepassed@163.com']
+  -
+    mail_host: "smtp.qq.com"
+    mail_user: "1693825876"
+    #邮箱授权码
+    mail_pass: "bqjhdkfqnvklcjei"
+    sender: '1693825876@qq.com'
+    receives: [ '15377335542@163.com' ]
+
+
+

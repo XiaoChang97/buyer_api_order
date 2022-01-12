@@ -1,0 +1,27 @@
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     test_case_temple.test_temple:test_temple.py:17 ************测试用例开始执行测试接口****************
+INFO     test_case_temple.test_temple:test_temple.py:18 用例yaml文件路径：D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml，用例名称：test_login_wrong_pwd************
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:242 测试接口依赖树为：{'test_login_wrong_pwd': {}}
+INFO     py_page.base_api:base_api.py:123 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:126 yaml_path:D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml,,,,test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:104 读取YAML文件::D:\肖畅工作\ChuanchengProjecrs\buyer_api_order\yaml_test_api\buyer_login.yaml::请求的接口名称::test_login_wrong_pwd::传入接口参数(sessionid)::{}::接口请求参数api_datas::{'api': '/api_v2/provider-app/paLogin/login', 'data': None, 'depend': [], 'except': {'code': 2012, 'message': '密码不正确', 'result': None}, 'headers': None, 'is_skip': None, 'json': {'loginPassword': 'TFc5+TDnIMIQYLOqp5rovUub0Pd7665oxP0rY/KUptYfgpsJRx82OYjh+MkKHKmR0WFlhIkjXOBh\nrQGzYrLOODGOVQK2gdGRr5Pa0312QcfzfzZWpOCEb0z6ueIIVYnut76sCsx41OPI0tRsr1bGYR57\nyw1TrUF31f86YohTFmo=\n', 'tel': '15500000005'}, 'method': 'post', 'params': None, 'tag': None}
+INFO     py_page.base_api:base_api.py:105 None
+INFO     py_page.base_api:base_api.py:46 响应头：{'Server': 'nginx/1.20.1', 'Date': 'Tue, 11 Jan 2022 03:47:37 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+INFO     py_page.base_api:base_api.py:110 接口::/api_v2/provider-app/paLogin/login::响应数据为::{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+INFO     py_page.base_api:base_api.py:269 top_res_dic是：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+INFO     py_page.base_api:base_api.py:289 接口响应数据字典集top_res_dic为：dict_keys(['test_login_wrong_pwd'])
+INFO     py_page.base_api:base_api.py:290 从top_res_dic获取到接口名api为test_login_wrong_pwd
+INFO     py_page.base_api:base_api.py:292 下游接口名far_api_name为None
+INFO     py_page.base_api:base_api.py:303 所有接口响应集top_res_dic为：{'test_login_wrong_pwd': {'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}}
+INFO     test_case_temple.test_temple:test_temple.py:22 测试用例中获取到的接口实际响应result为{'status_code': 200, 'content': {'code': 2012, 'message': '密码不正确', 'result': None}}
+INFO     test_case_temple.test_temple:test_temple.py:24 测试用例中从yaml中获取到的期望值exc为{'code': 2012, 'message': '密码不正确', 'result': None}
+INFO     py_page.base_api:base_api.py:140 dict_keys(['code', 'message', 'result'])
+INFO     py_page.base_api:base_api.py:146 测试用例中获取到接口的断言实际值为:: 【code:2012】
+INFO     py_page.base_api:base_api.py:149 测试用例通过::接口实际响应值act_value为：【code:2012】,预期为：【code:2012】
+INFO     py_page.base_api:base_api.py:146 测试用例中获取到接口的断言实际值为:: 【message:密码不正确】
+INFO     py_page.base_api:base_api.py:149 测试用例通过::接口实际响应值act_value为：【message:密码不正确】,预期为：【message:密码不正确】
+INFO     py_page.base_api:base_api.py:146 测试用例中获取到接口的断言实际值为:: 【result:None】
+INFO     py_page.base_api:base_api.py:149 测试用例通过::接口实际响应值act_value为：【result:None】,预期为：【result:None】

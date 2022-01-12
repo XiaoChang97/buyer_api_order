@@ -1,0 +1,93 @@
+{
+  "uid" : "32cb0d84449e74b6",
+  "name" : "test_case_temple[D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml-test_login]",
+  "fullName" : "test_case_temple.test_temple.TestTemple#test_case_temple",
+  "historyId" : "41a5a6b0b86b2918ae81090a07eb4784",
+  "time" : {
+    "start" : 1641872857342,
+    "stop" : 1641872857485,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对接口【D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml:test_login】进行测试",
+      "time" : {
+        "start" : 1641872857349,
+        "stop" : 1641872857485,
+        "duration" : 136
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "4a048ad182b835cd",
+      "name" : "log",
+      "source" : "4a048ad182b835cd.txt",
+      "type" : "text/plain",
+      "size" : 4641
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case_temple"
+  }, {
+    "name" : "suite",
+    "value" : "test_temple"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTemple"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-16V98TN"
+  }, {
+    "name" : "thread",
+    "value" : "1960-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case_temple.test_temple"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api",
+    "value" : "'test_login'"
+  }, {
+    "name" : "path",
+    "value" : "'D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "32cb0d84449e74b6.json",
+  "parameterValues" : [ "'test_login'", "'D:\\肖畅工作\\ChuanchengProjecrs\\buyer_api_order\\yaml_test_api\\buyer_login.yaml'" ]
+}
